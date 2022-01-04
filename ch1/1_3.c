@@ -23,3 +23,5 @@ int sum_squares(int x, int y, int z)
 	}
     }
 }
+
+teste
