@@ -26,7 +26,7 @@ void search_for_primes(int a, int b, int n)
   clock_t start;
 
   if (a % 2) i = a;
-  else i = a+1;
+  else i = a + 1;
 
   for (i; i <= b && n > 0; i += 2)
     {
