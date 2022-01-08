@@ -60,4 +60,5 @@ def main():
     print(filtered_accumulate(1, 10, identity, inc, mul, 1,
                               is_relative_prime_to_n(10)))
 
-main()
+if __name__ == '__main__':
+    main()

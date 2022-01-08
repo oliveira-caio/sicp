@@ -21,4 +21,5 @@ def main():
     print(generalized_sum_iter(1, 10, cube, inc, 0))
     print(generalized_sum_rec(1, 10, cube, inc))
 
-main()
+if __name__ == '__main__':
+    main()

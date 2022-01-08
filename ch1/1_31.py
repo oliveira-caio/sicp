@@ -33,4 +33,5 @@ def main():
     print(factorial_rec(4))
     print(pi_approx())
 
-main()
+if __name__ == '__main__':
+    main()

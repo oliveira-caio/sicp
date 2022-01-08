@@ -18,4 +18,5 @@ def main():
     print(simpson_rule(cube, 0, 1, 100))
     print(simpson_rule(cube, 0, 1, 1000))
 
-main()
+if __name__ == '__main__':
+    main()
