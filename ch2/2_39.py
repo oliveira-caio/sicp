@@ -2,7 +2,7 @@ def fold_left(op, init, seq):
     def inner_iter(result, rest):
         if len(rest) == 0:
             return result
-        return inner_iter(op(rest[0], result), rest[1:])
+        return inner_iter(op(result, rest[0]), rest[1:])
     return inner_iter(init, seq)
 
 def fold_right(op, init, seq):
@@ -13,7 +13,7 @@ def fold_right(op, init, seq):
     return inner_iter(init, seq)
 
 def reverse_left(seq):
-    return fold_left(lambda x, y : [x] + y, [], seq)
+    return fold_left(lambda x, y : [y] + x, [], seq)
 
 def reverse_right(seq):
     return fold_right(lambda x, y : y + [x], [], seq)
