@@ -13,8 +13,10 @@ def fold_right(op, init, seq):
     return inner_iter(init, seq)
 
 def main():
-    x = [1, 2, 3]
-    print(fold_left(lambda x, y : x + y, 0, x))
-    print(fold_right(lambda x, y : x + y, 0, x))
+    x = [8, 4, 2]
+    print(fold_left(lambda x, y : x - y, 0, x))
+    print(fold_right(lambda x, y : x - y, 0, x))
+    print(fold_left(lambda x, y : x / y, 1, x))
+    print(fold_right(lambda x, y : x / y, 1, x))
     
 main()
